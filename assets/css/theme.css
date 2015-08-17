@@ -1,0 +1,29 @@
+html {
+	background: #aaf;
+}
+
+.sticky-header {
+	background: #444;
+	color: #eee;
+}
+
+.cloud {
+	background: white;
+	border-radius: 20px;
+}
+
+.dave {
+	background: red;
+}
+
+.ground,
+.block {
+	background: brown;
+}
+
+.ending h2 {
+	font-size: 6em;
+	padding: .5em;
+	margin: 0;
+	line-height: 1;
+}
