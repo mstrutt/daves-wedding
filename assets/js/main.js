@@ -12,4 +12,9 @@ $(function() {
 			}
 		}
 	});
+
+	$('.continue').on('click', function(e) {
+		e.preventDefault();
+		$('.welcome').addClass('bounce-up');
+	});
 });

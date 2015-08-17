@@ -35,6 +35,10 @@ h1 {
 	line-height: 44px;
 }
 
+h2 {
+	margin-top: 0;
+}
+
 .sky {
 	top: 0;
 	bottom: auto;
@@ -95,4 +99,15 @@ h1 {
 
 .jump {
 	bottom: 180px;
+}
+
+.welcome {
+	position: fixed;
+	top: 20%;
+	left: 0;
+	right: 0;
+	width: 80%;
+	max-width: 600px;
+	margin: auto;
+	z-index: 6;
 }
