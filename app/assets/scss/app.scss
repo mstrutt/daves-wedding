@@ -1,0 +1,26 @@
+body {
+	min-width: 320px;
+	max-width: 1200px;
+	margin: 0 auto;
+	background: url(/assets/images/background.png) 0 0 repeat;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	display: flex;
+	flex-flow: row wrap;
+
+	> li {
+		width: 100%;
+
+		@media (min-width: 768px) {
+			width: 50%;
+		}
+	}
+
+	img {
+		max-width: 100%;
+	}
+}
