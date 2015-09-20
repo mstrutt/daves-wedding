@@ -7,13 +7,13 @@
 		<link rel="stylesheet" href="/assets/css/app.css" />
 		<link rel="shortcut icon" href="/assets/images/favicon.ico" />
 	</head>
-	<body>
+	<body class="content-wrap">
 	
 		<ul class="page-layout">
 			<li><img src="/assets/images/cake.png" alt /></li>
-			<li><img src="/assets/images/paper--name.png" alt="Mr David Poole & Miss Nicola Williams request the pleasure of your company at their wedding, Saturday April 23rd 2016" width="100%" /></li>
+			<li id="welcome"><img src="/assets/images/paper--name.png" alt="Mr David Poole & Miss Nicola Williams request the pleasure of your company at their wedding, Saturday April 23rd 2016" width="100%" /></li>
 			<li><img src="/assets/images/date.png" alt="Saturday 23rd April" /></li>
-			<li>
+			<li id="on-the-day">
 				<div class="paper">
 					<img src="/assets/images/paper-top.png" class="paper__border" alt />
 					<div class="paper__inner">
@@ -33,7 +33,7 @@
 				</div>
 			</li>
 			<li><img src="//placehold.it/600x600?text=RSVP" alt="RSVP" /></li>
-			<li>
+			<li id="rsvp">
 				<div class="paper">
 					<img src="/assets/images/paper-top.png" class="paper__border" alt />
 					<div class="paper__inner">
@@ -43,7 +43,7 @@
 				</div>
 			</li>
 			<li><img src="//placehold.it/600x600?text=FAQ" alt="FAQ" /></li>
-			<li>
+			<li id="faq">
 				<div class="paper">
 					<img src="/assets/images/paper-top.png" class="paper__border" alt />
 					<div class="paper__inner faqs">
@@ -84,7 +84,7 @@
 				</div>
 			</li>
 			<li><img src="/assets/images/gift.png" alt /></li>
-			<li>
+			<li id="gift-list">
 				<div class="paper">
 					<img src="/assets/images/paper-top.png" class="paper__border" alt />
 					<div class="paper__inner">
@@ -113,5 +113,14 @@
 			</li>
 		</ul>
 
+		<div class="nav-bar">
+			<nav class="content-wrap">
+				<a href="#welcome">Welcome</a>
+				<a href="#on-the-day">On the Day</a>
+				<a href="#rsvp">RSVP</a>
+				<a href="#faq">FAQ</a>
+				<a href="#gift-list">Gift List</a>
+			</nav>
+		</div>
 	</body>
 </html>

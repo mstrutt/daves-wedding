@@ -1,13 +1,21 @@
 body {
 	min-width: 320px;
-	max-width: 600px;
 	padding: 36px 0 39px;
-	margin: 0 auto;
 	background: #e0afbb url(/assets/images/background.png) 0 0 repeat fixed;
 	font-family: 'EB Garamond', serif;
 	font-size: 20px;
 	letter-spacing: 1px;
 	line-height: 1.3;
+
+	@media (min-width: 768px) {
+		padding-bottom: 3em;
+	}
+}
+
+.content-wrap {
+	max-width: 600px;
+	margin-left: auto;
+	margin-right: auto;
 
 	@media (min-width: 768px) {
 		max-width: 1200px;
@@ -119,5 +127,34 @@ a {
 
 	p {
 		margin: 0.5em 0;
+	}
+}
+
+.nav-bar {
+	display: none;
+	position: fixed;
+	left: 0;
+	right: 0;
+	bottom: -1px;
+	background: #fff;
+	padding: 0 1em;
+
+	@media (min-width: 768px) {
+		display: block;
+	}
+
+	nav {
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		height: 66px;
+
+		a {
+			border-bottom-width: 0;
+
+			&.active {
+				border-bottom-width: 1px;
+			}
+		}
 	}
 }
