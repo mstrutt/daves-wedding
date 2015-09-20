@@ -26,8 +26,22 @@ body {
 		align-items: flex-start;
 		width: 100%;
 
+		&:nth-child(odd) {
+			padding: 1em 0;
+		}
+
 		@media (min-width: 768px) {
 			width: 50%;
+
+			&:nth-child(odd) {
+				width: 49%;
+			}
+
+			&:nth-child(even) {
+				width: 51%;
+			}
+
+			margin-bottom: 3em;
 		}
 	}
 
@@ -40,7 +54,7 @@ body {
 	display: flex;
 	flex-flow: column nowrap;
 	align-self: stretch;
-	margin: 3% 8%;
+	margin: 0 8%;
 	text-align: center;
 
 	&__border {
@@ -95,4 +109,15 @@ a {
 
 .with-cta {
 	margin-top: 2em;
+}
+
+.faqs {
+	h3 {
+		margin: 1.3em 0 0;
+		font-size: 1.1em;
+	}
+
+	p {
+		margin: 0.5em 0;
+	}
 }
