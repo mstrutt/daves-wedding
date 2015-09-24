@@ -1,3 +1,13 @@
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+html {
+	box-sizing: border-box;
+}
+
 body {
 	min-width: 320px;
 	padding: 36px 0 39px;
@@ -18,7 +28,7 @@ body {
 	margin-right: auto;
 
 	@media (min-width: 768px) {
-		max-width: 1200px;
+		max-width: 1400px;
 	}
 }
 
@@ -42,11 +52,13 @@ body {
 			width: 50%;
 
 			&:nth-child(odd) {
-				width: 49%;
+				width: 45%;
+				max-width: 600px;
 			}
 
 			&:nth-child(even) {
-				width: 51%;
+				width: 55%;
+				flex-grow: 1;
 			}
 
 			margin-bottom: 3em;
@@ -62,6 +74,7 @@ body {
 	display: flex;
 	flex-flow: column nowrap;
 	align-self: stretch;
+	flex-grow: 1;
 	margin: 0 8%;
 	text-align: center;
 
@@ -77,6 +90,10 @@ body {
 		flex-grow: 1;
 		padding: 1.4em;
 		background: rgba(255, 255, 255, .9);
+
+		@media (min-width: 1200px) {
+			padding: 2.1em;
+		}
 	}
 }
 
@@ -117,6 +134,40 @@ a {
 
 .with-cta {
 	margin-top: 2em;
+}
+
+.timetable {
+	font-size: 1.1em;
+	overflow: hidden;
+	text-align: left;
+
+	dt {
+		float: left;
+		clear: left;
+		text-align: right;
+		font-weight: bold;
+		padding-right: .5em;
+
+		&::after {
+			content: '-';
+			font-weight: normal;
+			margin-left: .5em;
+		}
+	}
+
+	dd {
+		float: left;
+		width: calc(100% - 4em);
+		margin: 0;
+		text-align: left;
+	}
+
+	@media (min-width: 1080px) {
+		dt,
+		dd {
+			width: 50%;
+		}
+	}
 }
 
 .faqs {
