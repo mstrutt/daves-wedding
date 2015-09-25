@@ -39,6 +39,10 @@ body {
 	display: flex;
 	flex-flow: row wrap;
 
+	&--one-up {
+		align-items: center;
+	}
+
 	> li {
 		display: inline-flex;
 		align-items: flex-start;
@@ -108,17 +112,89 @@ a {
 	}
 }
 
+.form-rows {
+	list-style-type: none;
+	padding: 0;
+	margin: 1em 0 0;
+}
+
+.form-row {
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: center;
+
+	& + & {
+		margin-top: 1em;
+	}
+
+	&.with-cta {
+		flex-flow: row nowrap;
+		justify-content: flex-end;
+	}
+
+	&.with-postfix {
+		flex-flow: row nowrap;
+
+		input {
+			flex-grow: 1;
+			border-top-right-radius: 0;
+			border-bottom-right-radius: 0;
+			border-right: 0 none;
+		}
+
+		.postfix {
+			flex-grow: 0;
+			border-top-left-radius: 0;
+			border-bottom-left-radius: 0;
+		}
+	}
+}
+
+.with-login {
+	position: relative;
+
+	.login-form {
+		position: absolute;
+		left: 20%;
+		right: 20%;
+		top: 60%;
+		text-align: center;
+		font-size: .7em;
+
+		@media (min-width: 480px)  and (max-width: 767px), (min-width: 840px) {
+			font-size: 1em;
+		}
+	}
+}
+
+input {
+	color: #3C3C3C;
+	border: 0 none;
+	border-bottom: 1px solid;
+	padding: .5em .25em;
+	text-transform: uppercase;
+	text-align: center;
+	width: (230em/20);
+	margin: 0 auto;
+
+	&:focus {
+		outline: 0 none;
+	}
+}
+
 .button {
 	display: inline-block;
 	color: #3C3C3C;
+	background: transparent;
 	text-align: center;
 	letter-spacing: 1px;
 	text-transform: uppercase;
 	text-decoration: none;
-	font-size: 14px;
-	padding: 17px 0;
-	width: 230px;
+	font-size: (14em/20);
+	padding: (17em/14) 0;
+	width: (230em/14);
 	border: 1px solid #000;
+	margin: 0 auto;
 	transition: background-color .1s, color .1s;
 
 	&:hover {
@@ -208,4 +284,15 @@ a {
 			}
 		}
 	}
+}
+
+.visually-hidden {
+	position: absolute;
+	overflow: hidden;
+	clip: rect(0 0 0 0);
+	height: 1px;
+	width: 1px;
+	margin: -1px;
+	padding: 0;
+	border: 0;
 }

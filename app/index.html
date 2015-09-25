@@ -11,11 +11,20 @@
 	</head>
 	<body class="content-wrap">
 	
-		<ul class="page-layout">
+		<ul class="page-layout page-layout--one-up">
 			<li><img src="/assets/images/cake.png" alt /></li>
-			<li id="welcome"><img src="/assets/images/paper--password.png" alt="Mr David Poole & Miss Nicola Williams request the pleasure of your company at their wedding, Saturday April 23rd 2016" width="100%" /></li>
-			<li></li>
-			<li><input class="login-input" /><button class="login">Login</button></li>			
+			<li id="welcome" class="with-login">
+				<img src="/assets/images/paper--password.png" alt="Mr David Poole & Miss Nicola Williams request the pleasure of your company at their wedding, Saturday April 23rd 2016" width="100%" />
+				<form class="login-form">
+					<ol class="form-rows">
+						<li class="form-row">
+							<label for="password" class="visually-hidden">Password</label>
+							<input id="password" class="login-input" placeholder="Password" />
+						</li>
+						<li class="form-row"><button class="button login">Login</button></li>
+					</ol>
+				</form>
+			</li>
 		</ul>
 
 	</body>
