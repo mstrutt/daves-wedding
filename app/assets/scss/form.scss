@@ -1,0 +1,78 @@
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+html {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'EB Garamond', serif;
+	font-size: 20px;
+	letter-spacing: 1px;
+	line-height: 1.3;
+
+	padding: 0 2px;
+}
+
+input[type="text"], select {
+	max-width: 100%;
+	padding: .5em;
+}
+
+select {
+	appearance: none;
+}
+
+.ss-form-entry {
+	display: flex;
+	flex-flow: column nowrap;
+}
+
+.ss-form-question {
+	margin-bottom: 1em;
+}
+
+.ss-required-asterisk {
+	color: mix(red, rgb(151, 151, 151), 85%);
+}
+
+.required-message {
+	display: none;
+}
+
+.ss-q-title {
+	margin-bottom: .3em;
+}
+
+#navigation-table {
+	// margin: 0 0 0 auto;
+}
+
+input[type="submit"] {
+	display: inline-block;
+	color: #3C3C3C;
+	background: transparent;
+	text-align: center;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	text-decoration: none;
+	font-size: (14em/20);
+	padding: (17em/14) 0;
+	width: calc(100vw - 4px);
+	max-width: 100%;
+	border: 1px solid #000;
+	margin: 1em auto 0;
+	transition: background-color .1s, color .1s;
+
+	@media (min-width: 320px) {
+		width: (230em/14);
+	}
+
+	&:hover {
+		background: #545454;
+		color: white;
+	}
+}
