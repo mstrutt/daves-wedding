@@ -21,15 +21,6 @@ body {
 	font-size: 1.6rem;
 }
 
-.sticky-header {
-	position: fixed;
-	top: 0;
-	left: 0;
-	right: 0;
-	height: 44px;
-	padding-left: .5em;
-}
-
 h1 {
 	margin: 0;
 	line-height: 44px;
@@ -40,7 +31,7 @@ h2 {
 }
 
 .sky {
-	top: 0;
+	top: -22px;
 	bottom: auto;
 	width: 200%;
 	z-index: 1;
@@ -69,45 +60,74 @@ h2 {
 
 .ground {
 	z-index: 5;
-	width: 300%;
+	width: 600vw;
+	min-width: 6000px;
 	height: 60px;
 }
 
 .block {
 	position: absolute;
 	left: 50%;
-	bottom: 100%;
-	height: 60px;
-	width: 60px;
+	bottom: -10px;
+	height: 200px;
+	width: 100px;
 }
 
 .ending {
 	position: absolute;
-	right: 0;
-	bottom: 100%;
+	right: 50vw;
+	margin-right: -200px;
+	bottom: 52px;
+}
+
+.hang-left {
+	transform: translateX(-40vw);
 }
 
 .dave {
 	position: fixed;
-	bottom: 60px;
-	left: 120px;
+	bottom: 54px;
+	left: 50%;
 	height: 200px;
-	width: 80px;
+	width: 160px;
+	margin-left: -80px;
 	z-index: 5;
-	transition: bottom .1s ease-out;
+	transition: bottom .3s ease-out;
 }
 
 .jump {
-	bottom: 180px;
+	bottom: 240px;
+}
+
+.must-clear {
+	bottom: 240px;
+	transition: none;
 }
 
 .welcome {
 	position: fixed;
-	top: 20%;
+	top: 15%;
 	left: 0;
 	right: 0;
 	width: 80%;
 	max-width: 600px;
 	margin: auto;
 	z-index: 6;
+}
+
+.castle {
+	position: relative;
+	width: 400px;
+	height: 400px;
+	z-index: 9;
+}
+
+.guests {
+	position: absolute;
+	bottom: 360px;
+	left: 0;
+	right: 0;
+	display: flex;
+	align-items: flex-end;
+	justify-content: center;
 }

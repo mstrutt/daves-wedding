@@ -8,24 +8,53 @@ html {
 }
 
 .cloud {
-	background: white;
-	border-radius: 20px;
+	background: url('/assets/images/mario/cloud-1.png') no-repeat 50% 50%;
+	background-size: contain;
+	
+	&:nth-child(3n + 1) {
+		background-image: url('/assets/images/mario/cloud-1.png');
+	}
+
+	&:nth-child(3n + 2) {
+		background-image: url('/assets/images/mario/cloud-2.png');
+	}
+
+	&:nth-child(3n + 2) {
+		background-image: url('/assets/images/mario/cloud-3.png');
+	}
 }
 
 .dave {
-	background: red;
+	background: url('/assets/images/mario/dave-look-up.png') no-repeat 32px 100%;
+
+	&.walk-1 {
+		background-image: url('/assets/images/mario/dave-walk-1.png');
+	}
+
+	&.walk-2 {
+		background-image: url('/assets/images/mario/dave-walk-2.png');
+		background-position-x: 25px;
+	}
+
+	&.celebrate {
+		background-image: url('/assets/images/mario/dave-peace.png');
+		background-position-x: 18px;
+	}
+
+	&.jump {
+		background-image: url('/assets/images/mario/dave-jump.png') !important;
+		background-position-x: 32px;
+	}
 }
 
-.ground,
+.ground {
+	background: url('/assets/images/mario/floor-top.png') repeat-x 0 0, url('/assets/images/mario/floor.png') repeat-x 0 17px;
+	background-size: 80px;
+}
+
 .block {
-	background: brown;
-}
-
-.ending h2 {
-	font-size: 6em;
-	padding: .5em;
-	margin: 0;
-	line-height: 1;
+	background: url('/assets/images/mario/pipe.png') no-repeat 50% 100%;
+	background-size: contain;
 }
 
 .welcome {
@@ -42,6 +71,11 @@ html {
 .continue {
 	font-size: 1.6em;
 	color: inherit;
+}
+
+.castle {
+	background: url('/assets/images/mario/castle.png') no-repeat 50% 100%;
+	background-size: contain;
 }
 
 .bounce-up {
