@@ -39,12 +39,18 @@ select {
 	margin-bottom: 1em;
 }
 
-.ss-item .ss-navigate {
-	text-align: center;
+.ss-item {
+	.ss-navigate {
+		text-align: center;
+	}
 }
 
-.ss-item .ss-navigate table{
-	display: inline-block;
+.ss-item {
+	.ss-navigate {
+		table {
+			display: inline-block;
+		}
+	}
 }
 
 
