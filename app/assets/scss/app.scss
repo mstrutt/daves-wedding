@@ -306,3 +306,9 @@ input {
 		overflow: hidden;
 	}
 }
+
+iframe {
+        min-width: 100%; 
+        width: 100px;
+        *width: 100%; 
+}
