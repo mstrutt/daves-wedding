@@ -218,9 +218,8 @@ input {
 	text-align: left;
 
 	dt {
-		float: left;
 		clear: left;
-		text-align: right;
+		text-align: center;
 		font-weight: bold;
 		padding-right: .5em;
 
@@ -232,16 +231,21 @@ input {
 	}
 
 	dd {
-		float: left;
-		width: calc(100% - 4em);
+		
 		margin: 0;
-		text-align: left;
+		text-align: center;
 	}
 
 	@media (min-width: 1080px) {
-		dt,
-		dd {
+		dt {
+			float: left;
 			width: 50%;
+			text-align: right;
+		}
+		dd {
+			float: left;
+			width: 50%;
+			text-align: left;
 		}
 	}
 }
