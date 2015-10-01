@@ -3,6 +3,8 @@
 	<head>
 		<title>Mr &amp; Mrs Poole</title>
 
+		<meta id="viewport" name="viewport" content="width=device-width,user-scalable=no,ititial-scale=1,maximum-scale=1" />
+
 		<link rel="stylesheet" href="/assets/vendor/css/jInvertScroll.css" />
 		<link rel="stylesheet" href="/assets/css/mario.css" />
 		<link rel="shortcut icon" href="/assets/images/favicon.ico" />
@@ -16,9 +18,30 @@
 		  ga('send', 'pageview');
 		
 		</script>
+		<script>
+			if (screen.width < 600) {
+				var viewport = document.getElementById('viewport');
+				viewport.setAttribute('content',viewport.content.replace('device-width', '600px'));
+			}
+		</script>
 	</head>
 	<body>
-		<div class="welcome">
+		<div style="display: none;">
+			<!-- All the images I'll be using in CSS /-->
+			<img src="/assets/images/mario/dave-jump.png" alt />
+			<img src="/assets/images/mario/dave-look-up.png" alt />
+			<img src="/assets/images/mario/dave-peace.png" alt />
+			<img src="/assets/images/mario/dave-walk-1.png" alt />
+			<img src="/assets/images/mario/dave-walk-2.png" alt />
+			<img src="/assets/images/mario/floor.png" alt />
+			<img src="/assets/images/mario/floor-top.png" alt />
+			<img src="/assets/images/mario/pipe.png" alt />
+			<img src="/assets/images/mario/cloud-1.png" alt />
+			<img src="/assets/images/mario/cloud-2.png" alt />
+			<img src="/assets/images/mario/cloud-3.png" alt />
+		</div>
+
+		<div class="welcome" id="welcome">
 			<h2>Welcome to Nicky and Dave's Wedding Adventure...</h2>
 			<p>Please scroll down and see Dave run around - jumping over things - to try and save the princess.</p>
 			<a href="#" class="continue">continue</a>
@@ -35,7 +58,7 @@
 			<div class="cloud"></div>
 		</div>
 
-		<div class="dave hang-left"></div>
+		<div class="dave hang-left" id="dave"></div>
 
 		<div class="ground scroll">
 			<div class="block hang-left"></div>
