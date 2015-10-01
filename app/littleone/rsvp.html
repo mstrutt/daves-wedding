@@ -19,10 +19,14 @@
 	  ga('send', 'pageview');
 		
 	</script>
+	<script type="text/javascript">var submitted=false;</script>
 </head>
 <body class="content-wrap">
+	<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {window.location='thankyou.html';}"></iframe>
 	
-	<form action="https://docs.google.com/forms/d/1dbijPLkGvw_uh4mvVtIPO-Rz5OQa_qANUF4tLsIm2qY/formResponse?embedded=true" method="POST" id="ss-form" target="_self" onsubmit=""><ol role="list" class="ss-question-list" style="padding-left: 0">
+	<form action="https://docs.google.com/forms/d/1dbijPLkGvw_uh4mvVtIPO-Rz5OQa_qANUF4tLsIm2qY/formResponse?embedded=true" method="POST" id="ss-form" target="hidden_iframe" 
+onsubmit="submitted=true;">
+		<ol role="list" class="ss-question-list" style="padding-left: 0">
 		<div class="ss-form-question errorbox-good" role="listitem">
 			<div dir="auto" class="ss-item ss-item-required ss-text"><div class="ss-form-entry">
 				<label class="ss-q-item-label" for="entry_1350875654"><div class="ss-q-title">What&#39;s your name(s)?
