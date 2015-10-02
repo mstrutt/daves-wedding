@@ -25,25 +25,22 @@ html {
 }
 
 .dave {
-	background: url('/assets/images/mario/dave-look-up.png') no-repeat 32px 100%;
+	background: url('/assets/images/mario/dave-sprite.png') no-repeat 0 100%;
 
 	&.walk-1 {
-		background-image: url('/assets/images/mario/dave-walk-1.png');
+		background-position-x: -160px;
 	}
 
 	&.walk-2 {
-		background-image: url('/assets/images/mario/dave-walk-2.png');
-		background-position-x: 25px;
-	}
-
-	&.celebrate {
-		background-image: url('/assets/images/mario/dave-peace.png');
-		background-position-x: 18px;
+		background-position-x: -320px;
 	}
 
 	&.jump {
-		background-image: url('/assets/images/mario/dave-jump.png') !important;
-		background-position-x: 32px;
+		background-position-x: -480px;
+	}
+
+	&.celebrate {
+		background-position-x: -640px;
 	}
 }
 
