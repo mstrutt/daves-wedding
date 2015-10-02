@@ -80,18 +80,29 @@ input[type="submit"] {
 	text-decoration: none;
 	font-size: (14em/20);
 	padding: (17em/14) 0;
+	max-width: (230em/14);
 	width: calc(100vw - 4px);
-	max-width: 100%;
 	border: 1px solid #000;
 	margin: 1em auto 0;
 	transition: background-color .1s, color .1s;
-
-	@media (min-width: 320px) {
-		width: (230em/14);
-	}
 
 	&:hover {
 		background: #545454;
 		color: white;
 	}
+}
+
+a {
+    color: #3C3C3C;
+    text-decoration: none;
+    border-bottom: 1px solid;
+    transition: border-color 0.1s, color 0.1s;
+}
+
+.thank-you {
+	text-align: center;
+}
+
+#navigation-table {
+	margin: 0 auto;
 }
