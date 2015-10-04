@@ -80,6 +80,7 @@ body {
 	flex-flow: column nowrap;
 	align-self: stretch;
 	flex-grow: 1;
+	flex-shrink: 1;
 	margin: 0 8%;
 	text-align: center;
 
@@ -282,6 +283,7 @@ input {
 		height: 66px;
 
 		a {
+			display: block;
 			border-bottom-width: 0;
 
 			&.active {
