@@ -28,19 +28,19 @@ html {
 	background: url('/assets/images/mario/dave-sprite.png') no-repeat 0 100%;
 
 	&.walk-1 {
-		background-position-x: -160px;
+		background-position: -160px 100%;
 	}
 
 	&.walk-2 {
-		background-position-x: -320px;
+		background-position: -320px 100%;
 	}
 
 	&.jump {
-		background-position-x: -480px;
+		background-position: -480px 100%;
 	}
 
 	&.celebrate {
-		background-position-x: -640px;
+		background-position: -640px 100%;
 	}
 }
 
